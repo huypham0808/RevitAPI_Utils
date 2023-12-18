@@ -19,23 +19,18 @@ namespace MyFirstCommand
 
             //Find family
             FilteredElementCollector collector = new FilteredElementCollector(doc);
-            IList<Element> symbols = collector.OfClass(typeof(FamilySymbol)).WhereElementIsElementType().ToElements(); // Lay danh sach family type trong Revit
-            FamilySymbol symbol = null;
-            foreach (FamilySymbol sym in symbols)
-            {
-                if (sym.Name == "1525 x 762mm")
-                {
-                    symbol = sym as FamilySymbol;
-                    break;
-                }
-            }
-            // Dat family vao project, su dung method Family Instance
+            //IList<Element> symbols = collector.OfClass(typeof(FamilySymbol)).WhereElementIsElementType().ToElements(); // Lay danh sach family type trong Revit
+            FamilySymbol symbol = collector.OfClass(typeof(FamilySymbol))
+                .WhereElementIsElementType()
+                .Cast<FamilySymbol>()
+                .First(x => x.Name == "1525 x 762mm");
             try
             {
+                //Phai dat qua trinh thay doi trong Transaction
                 using (Transaction trans = new Transaction(doc, "Change Element"))
                 {
                     trans.Start();
-                    if(!symbol.IsActive)
+                    if(!symbol.IsActive) //Kiem tra xem family active chua, neu chua thi Active
                     {
                         symbol.Activate();
                     }

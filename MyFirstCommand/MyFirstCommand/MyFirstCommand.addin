@@ -46,5 +46,17 @@
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
 	</AddIn>
+
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.CreateWall</FullClassName>
+		<Text>Creat Wall</Text>
+		<Description>Greate architecture wall</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>c705aa0d-eea5-48cd-8762-db8893b33c15</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
 </RevitAddIns>
 <!--{6F92751B-F13B-4E40-9109-7DFDFD532987}-->

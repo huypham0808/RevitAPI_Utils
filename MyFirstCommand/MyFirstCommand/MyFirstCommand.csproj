@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ChangeElements.cs" />
     <Compile Include="CollectionDoor.cs" />
+    <Compile Include="CreateWall.cs" />
     <Compile Include="MyFirstCommand.cs" />
     <Compile Include="Placefamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

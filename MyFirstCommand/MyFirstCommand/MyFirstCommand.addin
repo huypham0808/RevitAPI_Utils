@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.MyFirstCommand</FullClassName>
+		<Text>GetElementId</Text>
+		<Description>Get ID from a element</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>239BD853-36E4-461f-9171-C5ACEDA4E723</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
+
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.CollectionDoor</FullClassName>
+		<Text>Collection Door</Text>
+		<Description>Collect door from project</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>f49c1bb1-b23c-41ec-bba1-2decea3918e5</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.ChangeElements</FullClassName>
+		<Text>Delete Element</Text>
+		<Description>Delete a element from Revit</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>eb72ea2e-cf7b-48f2-9a99-a538de7fcbf3</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
+
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.Placefamily</FullClassName>
+		<Text>Place Family</Text>
+		<Description>Place a family into Revit</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>97b31ca4-34e2-465e-bd43-71409810a896</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
+</RevitAddIns>
+<!--{6F92751B-F13B-4E40-9109-7DFDFD532987}-->

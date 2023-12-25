@@ -12,7 +12,7 @@
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
 	</AddIn>
 
-	<AddIn Type="Command">
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.CollectionDoor</FullClassName>
 		<Text>Collection Door</Text>
@@ -22,8 +22,8 @@
 		<AddInId>f49c1bb1-b23c-41ec-bba1-2decea3918e5</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
-	</AddIn>
-	<AddIn Type="Command">
+	</AddIn>-->
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.ChangeElements</FullClassName>
 		<Text>Delete Element</Text>
@@ -33,9 +33,9 @@
 		<AddInId>eb72ea2e-cf7b-48f2-9a99-a538de7fcbf3</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
-	</AddIn>
+	</AddIn>-->
 
-	<AddIn Type="Command">
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.Placefamily</FullClassName>
 		<Text>Place Family</Text>
@@ -45,9 +45,9 @@
 		<AddInId>97b31ca4-34e2-465e-bd43-71409810a896</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
-	</AddIn>
+	</AddIn>-->
 
-	<AddIn Type="Command">
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.CreateWall</FullClassName>
 		<Text>Creat Wall</Text>
@@ -57,8 +57,8 @@
 		<AddInId>c705aa0d-eea5-48cd-8762-db8893b33c15</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
-	</AddIn>
-	<AddIn Type="Command">
+	</AddIn>-->
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.CreatFloor</FullClassName>
 		<Text>Creat Floor</Text>
@@ -68,8 +68,8 @@
 		<AddInId>8feec0fc-7102-441e-a01c-07b3249f4da7</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
-	</AddIn>
-	<AddIn Type="Command">
+	</AddIn>-->
+	<!--<AddIn Type="Command">
 		<Name>MyFirstCommand</Name>
 		<FullClassName>MyFirstCommand.EditElement</FullClassName>
 		<Text>Edit position Ele</Text>
@@ -77,6 +77,17 @@
 		<VisibilityMode>AlwaysVisible</VisibilityMode>
 		<Assembly>MyFirstCommand.dll</Assembly>
 		<AddInId>4d6f3cea-a33d-4d9b-a094-6c4c67c51261</AddInId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>-->
+	<AddIn Type="Command">
+		<Name>MyFirstCommand</Name>
+		<FullClassName>MyFirstCommand.CreateColumn</FullClassName>
+		<Text>Creat Column</Text>
+		<Description>Move and rotate elements</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>MyFirstCommand.dll</Assembly>
+		<AddInId>f6b4b3dd-f019-402f-88e9-b1a9c25e233f</AddInId>
 		<VendorId>ADSK</VendorId>
 		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
 	</AddIn>

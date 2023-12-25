@@ -1,0 +1,107 @@
+﻿<Window x:Class="MyFirstCommand.WPFCreateColumn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:MyFirstCommand"
+        mc:Ignorable="d"
+        Title="Creat Column"
+        ResizeMode="NoResize"
+        Width="400"
+        Height="280"
+        MaxHeight="280"
+        MaxWidth="400"
+        WindowStartupLocation="CenterScreen"
+        d:DesignHeight="280"
+        d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0"
+            BorderBrush="Red"
+                  Width="380"
+                  Height="190"
+                  Header="Input data"
+                  VerticalAlignment="Top">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Content="Family Type"
+                       VerticalAlignment="top" />
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       Content="Layer Name"
+                       VerticalAlignment="top" />
+                <ComboBox  x:Name="cbb_FamilyName"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="2"
+                           Height="22" />
+                <TextBox x:Name="txb_LayerName"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="2"
+                         Height="22" />
+                <Label Grid.Row="2"
+                       Grid.Column="1"
+                       Content="Base Level" />
+                <ComboBox x:Name="cbb_BaseLevel"
+                          Grid.Row="2"
+                          Grid.Column="2"
+                          Height="22" />
+                <Label Grid.Row="3"
+                       Grid.Column="1"
+                       Content="Base Offset" />
+                <!--#region Top-->
+                <TextBox Grid.Row="3"
+                         Grid.Column="2"
+                         Height="22" />
+                <Label Grid.Row="4"
+                       Grid.Column="1"
+                       Content="Top Level" />
+                <ComboBox x:Name="cbb_TopLevel"
+                          Grid.Row="4"
+                          Grid.Column="2"
+                          Height="22" />
+                <Label Grid.Row="5"
+                       Grid.Column="1"
+                       Content="Top Offset" />
+                <TextBox Grid.Row="5"
+                         Grid.Column="2"
+                         Height="22" />
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btn_Ok"
+            VerticalAlignment="Bottom"
+                Content="OK"
+                Width="100"
+                Height="22"
+                Margin="0,5,10,5"
+                HorizontalAlignment="Right"
+                Grid.Row="1"/>
+        <Button x:Name="btn_Cancel"
+                VerticalAlignment="Bottom"
+                Content="Cancel"
+                Width="100"
+                Height="22"
+                Margin="0,5,120,5"
+                HorizontalAlignment="Right"
+                Grid.Row="1" />
+    </Grid>
+</Window>

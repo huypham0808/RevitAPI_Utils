@@ -20,15 +20,30 @@ namespace MyFirstCommand
     /// </summary>
     public partial class WPFCreateColumn : Window
     {
-        public WPFCreateColumn()
+        public WPFCreateColumn(List<string> listTypeFamily, List<string> listLevel)
         {
             InitializeComponent();
-            List<string> listTypeFamily = new List<string>() { "Cot vuong", "Cot tron", "Cot thep I" };
             WPFUtils.AddListToWPFCombobox(listTypeFamily, cbb_FamilyName);
-
-            List<string> listLevel = new List<string>() { "Level 1", "Level 2", "Level 3" };
             WPFUtils.AddListToWPFCombobox(listLevel, cbb_BaseLevel);
             WPFUtils.AddListToWPFCombobox(listLevel, cbb_TopLevel);
+
+            txb_BaseOffset.Text = "0";
+            txb_TopOffset.Text = "0";
+        }
+        private void txb_BaseOffset_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            WPFUtils.CheckTextBoxValue(txb_BaseOffset);
+        }
+
+        private void txb_TopOffset_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            WPFUtils.CheckTextBoxValue(txb_TopOffset);
+        }
+
+        private void btn_Ok_Click(object sender, RoutedEventArgs e)
+        {
+            string pt1 = cbb_FamilyName.SelectedItem.ToString();
+            MessageBox.Show(pt1);
         }
     }
 }

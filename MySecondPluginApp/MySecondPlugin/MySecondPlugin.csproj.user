@@ -3,7 +3,5 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files\Autodesk\Revit 2021\Revit.exe</StartProgram>
-    <StartArguments>
-    </StartArguments>
   </PropertyGroup>
 </Project>

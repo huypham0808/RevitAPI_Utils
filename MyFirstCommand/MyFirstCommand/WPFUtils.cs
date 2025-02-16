@@ -15,5 +15,16 @@ namespace MyFirstCommand
             cbb.ItemsSource = list;
             cbb.SelectedIndex = 0;
         }
+        public static void CheckTextBoxValue(TextBox textBox)
+        {
+            string bo = textBox.Text;
+            bool check = double.TryParse(bo, out double val1);
+            if (!check && bo != string.Empty)
+            {
+                MessageBox.Show("Input number");
+                textBox.Clear();
+                textBox.Text = "0";
+            }
+        }
     }
 }

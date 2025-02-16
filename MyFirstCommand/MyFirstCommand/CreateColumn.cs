@@ -16,7 +16,12 @@ namespace MyFirstCommand
         {
             UIDocument uiDoc = commandData.Application.ActiveUIDocument;
             Document doc = uiDoc.Document;
-            WPFCreateColumn creatColumnWindow = new WPFCreateColumn();
+            List<string> listFamily = new List<string>() { "Cot vuong", "Cot tron", "Cot thep I" };
+            List<string> listLevel = new List<string>() { "Level 1", "Level 2", "Level 3" };
+
+
+
+            WPFCreateColumn creatColumnWindow = new WPFCreateColumn(listFamily, listLevel);
             creatColumnWindow.Show();
             try
             {

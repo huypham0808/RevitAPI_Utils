@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>My Second Plugin</Name>
+		<Assembly>MySecondPlugin.dll</Assembly>
+		<FullClassName>MySecondPlugin.AppCommand</FullClassName>
+		<AddInId>8BF556E9-5CE9-4B6B-8CBE-223B0441FEBA</AddInId>
+		<VendorId>Huy Pham</VendorId>
+		<VendorDescription>Pham Ngo Hoang Huy</VendorDescription>
+	</AddIn>
+</RevitAddIns>
